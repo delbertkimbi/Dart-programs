@@ -2,13 +2,13 @@ import 'dart:io';
 
 /// enums(A set of known finite values of a variable) of days of the week
 enum DaysOfTheWeek {
-  Monday,
-  Tuesday,
-  Wednesday,
-  Thursday,
-  Friday,
-  Saturday,
-  Sunday,
+  monday,
+  tuesday,
+  wednesday,
+  thursday,
+  friday,
+  saturday,
+  sunday,
 }
 
 void main() {
@@ -28,7 +28,7 @@ void main() {
   ///for-in repeatition control structure of enums
   for (var i in DaysOfTheWeek.values) {
     i.name.toLowerCase() == day.toLowerCase()
-        ? print(i.name[0] + " the first letter of ${i.name}")
+        ? print("${i.name[0]} the first letter of ${i.name}")
         : null;
   }
 
@@ -36,7 +36,7 @@ void main() {
   DaysOfTheWeek.values.forEach((i) {
     i.name.toUpperCase() ==
             day.toUpperCase() // Preventing differences due to cases
-        ? print("${i.name.toUpperCase()} is the ${dayNum} day of the week.")
+        ? print("${i.name.toUpperCase()} is the $dayNum day of the week.")
         : null;
 
     // checking to make sure the index equalls the dayNum-1 to prevent printing all cases
