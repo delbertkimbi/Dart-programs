@@ -19,8 +19,7 @@ void main() {
   /// Getting the number which represents the day of the week
   int dayNum;
   print("Enter a number that represents the day");
-  dayNum = int.parse(stdin.readLineSync()!);             //reads non nullable number
-
+  dayNum = int.parse(stdin.readLineSync()!); //reads non nullable number
 
   //Checking if dayNum is between 1 and 7
   assert(dayNum >= 1 && dayNum <= 7);
@@ -33,7 +32,7 @@ void main() {
   }
 
   ///forEach repeatition control structure of enums
-  DaysOfTheWeek.values.forEach((i) {
+  for (var i in DaysOfTheWeek.values) {
     i.name.toUpperCase() ==
             day.toUpperCase() // Preventing differences due to cases
         ? print("${i.name.toUpperCase()} is the $dayNum day of the week.")
@@ -62,5 +61,5 @@ void main() {
           print("Something is wrong some where.");
       }
     }
-  });
+  }
 }
