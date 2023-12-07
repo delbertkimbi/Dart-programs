@@ -1,5 +1,5 @@
-import 'dart:io';
 /// Dart program that takes a List of numbers, and determines which of them is prime,stores in another list and prints them.
+import 'dart:io';  
 List getList(List<int> list) {
   for (var i = 0; i < 3; i++) {
     list[i] = int.parse(stdin.readLineSync()!);
@@ -27,7 +27,6 @@ void checkPrime(List<int> list) {
 }
 
 void main() {
-  // ignore: non_constant_identifier_names
   List<int> A1 = [];
   getList(A1);
   print("object");
