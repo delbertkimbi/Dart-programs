@@ -1,4 +1,7 @@
-void main() {}
+void main() {
+  test();
+}
+
 Future<int> futureMultiples(int a) {
   return Future.delayed(
     Duration(seconds: 3),
