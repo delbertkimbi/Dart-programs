@@ -8,8 +8,7 @@ Stream<String> periodicStream() {
     (value) {
       return "Delbert is wealthy";
     },
-  );
-}
+ 
 
 void test() async {
   await for (final value in periodicStream()) {
