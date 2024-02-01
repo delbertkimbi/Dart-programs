@@ -1,4 +1,3 @@
-// ignore: file_names
 import "dart:async";
 // Part 1
 //Write a function addHello() that takes a single String argument.

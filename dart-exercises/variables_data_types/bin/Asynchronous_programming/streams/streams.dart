@@ -4,7 +4,7 @@ void main() {
 
 Stream<String> periodicStream() {
   return Stream.periodic(
-    Duration(seconds: 1),
+    Duration(seconds: 2),
     (value) {
       return "Delbert is wealthy";
     },
